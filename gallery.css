@@ -1,12 +1,81 @@
 .container{
   display: grid;
-  grid-template-columns: repeat(2,5%);
-  grid-template-rows: repeat(2,5%);
+  grid-template-columns: repeat(3,33%);
+  grid-template-rows: repeat(3,33%);
+  justify-items: center;
+  align-items: center;
   width:100%;
   height:100%;
 }
 
 .todas{
-  background-color: aqua;
-  border:solid 3px #000;
+  color: white;
+  text-transform: uppercase;
+  width:90%;
+  height:90%;
+  font-family: Montserrat, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 10px 8px #000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 15px;
+  transition: width 1s, height 1s, border-radius 2s;
+  transition-timing-function: ease-in;
+}
+
+.todas:hover{
+  width:100%;
+  height:100%;
+  border-radius:0;
+}
+#serie-1{
+  background-image: url(https://cdn.mos.cms.futurecdn.net/EuqMysGV3wgA7x8kuf5YM6-1200-80.jpg);
+}
+
+#serie-2{
+  background-image: url(image/mr_robot.jpg);
+}
+
+#serie-3{
+  background-image: url(http://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2019/12/friends-emma-cake.jpg);
+}
+
+#serie-4{
+  background-image: url(https://cinepop.com.br/wp-content/uploads/2018/06/IMPULSE-2-1-e1528386297141.jpg);
+}
+
+#serie-5{
+  background-image: url(https://i1.wp.com/mixdeseries.com.br/wp-content/uploads/2019/12/Good-Girls-3-temporada-Spoilers.jpg?fit=1050%2C600&ssl=1);
+}
+
+#serie-6{
+  background-image: url(http://br.web.img2.acsta.net/r_640_360/newsv7/19/09/19/21/55/3627282.jpg);
+}
+
+#serie-7{
+  background-image: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2019/03/parks-and-recreation-season-6.jpg);
+}
+
+#serie-8{
+  background-image: url(https://d2skuhm0vrry40.cloudfront.net/2018/articles/2018-09-20-17-22/daredevil_season_3_return_to_form_1125865_1280x0.jpeg/EG11/thumbnail/750x422/format/jpg/quality/60);
+}
+
+#serie-9{
+  background-image: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2019/11/stranger-things-season-3-1553085332.png);
+}
+
+
+
+body {
+  background-color: #292A32;
+}
+
+@media (max-width:600px){
+  .container{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+  }
 }
